@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Movie Ticket Booking</h2>
+
+        <div class="form">
+            <label>Select Movie:</label>
+            <select id="movie">
+                <option value="0">-- Select --</option>
+                <option value="150">Leo (₹150)</option>
+                <option value="200">Jailer (₹200)</option>
+                <option value="180">Vikram (₹180)</option>
+                <option value="250">Avengers (₹250)</option>
+            </select>
+
+            <label>Number of Tickets:</label>
+            <input type="number" id="tickets" placeholder="Enter tickets">
+
+            <button onclick="bookTicket()">Book Ticket</button>
+        </div>
+
+        <div id="summary"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
